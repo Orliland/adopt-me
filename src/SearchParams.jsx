@@ -1,5 +1,7 @@
+import { useState } from "react";
+
 const SearchParams = () => {
-  const location = "Los Angeles, CA";
+  const [location, setLocation] = useState("Los Angeles, CA");
 
   return (
     <div className="search-params">
@@ -7,6 +9,7 @@ const SearchParams = () => {
         <label htmlFor="location">
           Location
           <input
+            onChange={(e) => setLocation(e.target.value)}
             id="location"
             type="text"
             value={location}
