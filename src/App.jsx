@@ -7,7 +7,10 @@ import Details from "./Details";
 const App = () => {
   return (
     <BrowserRouter>
-      <h1>Adopt Me</h1>
+      <header>
+        <Link to="/">Adopt Me!</Link>
+      </header>
+      <Link></Link>
 
       <Routes>
         <Route path="/details/:id" element={<Details />} />
