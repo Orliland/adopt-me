@@ -20,7 +20,7 @@ const App = () => {
   const adoptedPet = useState(null);
   return (
     <div
-      className="p-0 m-0"
+      className="m-0 p-0"
       style={{
         background: "url(https://pets-images.dev-apis.com/pets/wallpaperA.jpg)",
       }}
@@ -47,5 +47,5 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );
